@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samuel Gábor · Endpoint security engineer</title>
-  <meta name="description" content="Samuel Gábor is an endpoint security engineer in Slovakia working with Microsoft Intune: Android Enterprise enrolment, CIS-hardened Windows 11 baselines, compliance and Conditional Access.">
+  <meta name="description" content="Samuel Gábor is an endpoint security engineer in Slovakia working with Microsoft Intune across Windows 11, iOS and Android: Autopilot, Autopatch, Apple Business Manager, CIS-hardened baselines, compliance and Conditional Access.">
   <link rel="canonical" href="https://www.samuelgabor.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Samuel Gábor · Endpoint security engineer">
@@ -18,9 +18,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=4">
+  <link rel="stylesheet" href="assets/css/site.css?v=5">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Samuel Gábor","jobTitle":"Endpoint Security Engineer","url":"https://www.samuelgabor.com/","address":{"@type":"PostalAddress","addressCountry":"SK"},"alumniOf":"Tomas Bata University in Zlín","knowsAbout":["Microsoft Intune","Microsoft 365","Android Enterprise","CIS Benchmarks","Conditional Access","Wireless security"],"sameAs":["https://github.com/BigSeeGee","https://www.linkedin.com/in/samuel-g%C3%A1bor"]}
+  {"@context":"https://schema.org","@type":"Person","name":"Samuel Gábor","jobTitle":"Endpoint Security Engineer","url":"https://www.samuelgabor.com/","address":{"@type":"PostalAddress","addressCountry":"SK"},"alumniOf":"Tomas Bata University in Zlín","knowsAbout":["Microsoft Intune","Microsoft 365","Windows Autopilot","Windows Autopatch","Apple Business Manager","Android Enterprise","CIS Benchmarks","Conditional Access","Wireless security"],"sameAs":["https://github.com/BigSeeGee","https://www.linkedin.com/in/samuel-g%C3%A1bor"]}
   </script>
   <script src="assets/js/site.js?v=2" defer></script>
   <script src="assets/js/console.js?v=4" defer></script>
@@ -56,7 +56,7 @@
             <p class="status" data-in style="--i:0"><span class="dot" aria-hidden="true"></span>Endpoint security engineer · Slovakia</p>
             <h1 id="hero-title" data-in style="--i:1">Samuel Gábor</h1>
             <p class="hero-role" data-in style="--i:2">I make company devices secure by default.</p>
-            <p class="hero-lead" data-in style="--i:3">I build Microsoft Intune setups end to end: enrolment, CIS-hardened baselines, compliance and Conditional Access, for Windows 11 and Android. In my own time I take wireless hardware apart to see how it fails.</p>
+            <p class="hero-lead" data-in style="--i:3">I build Microsoft Intune setups end to end: enrolment, apps, CIS-hardened baselines, compliance and Conditional Access, for Windows 11, iOS and Android. In my own time I take wireless hardware apart to see how it fails.</p>
             <div class="actions" data-in style="--i:4">
               <a class="btn btn-primary" href="#work">See the work
                 <svg class="arrow-d" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
@@ -77,7 +77,7 @@
                   Replay
                 </button>
               </div>
-<pre class="con-body" aria-hidden="true"><span class="ln cmd" data-t="pwsh --version"><span class="ps">PS&gt;</span> pwsh <span class="flag">--version</span></span><span class="ln out" data-wait="250">PowerShell 7.5.2</span><span class="ln cmd" data-t="whoami"><span class="ps">PS&gt;</span> whoami</span><span class="ln out" data-wait="200">azuread\samuelgabor</span><span class="ln cmd" data-t="Connect-MgGraph"><span class="ps">PS&gt;</span> Connect-MgGraph</span><span class="ln out" data-wait="1100">Welcome to Microsoft Graph!</span><span class="ln cmd" data-t="Get-MgDeviceManagementManagedDevice |"><span class="ps">PS&gt;</span> Get-MgDeviceManagementManagedDevice |</span><span class="ln cmd cont" data-t="ft DeviceName, ComplianceState"><span class="ps">&gt;&gt;</span> ft DeviceName, ComplianceState</span><span class="ln out gap" data-wait="800"></span><span class="ln out th">DeviceName   ComplianceState</span><span class="ln out th">----------   ---------------</span><span class="ln out">WIN11-LAB-01 <span class="ok">compliant</span></span><span class="ln out">Galaxy-A55   <span class="ok">compliant</span></span><span class="ln out">Galaxy-A54   <span class="ok">compliant</span></span><span class="ln out">Galaxy-A14   <span class="ok">compliant</span></span><span class="ln out gap"></span><span class="ln cmd idle" data-wait="250"><span class="ps">PS&gt;</span> <span class="caret"></span></span></pre>
+<pre class="con-body" aria-hidden="true"><span class="ln cmd" data-t="pwsh --version"><span class="ps">PS&gt;</span> pwsh <span class="flag">--version</span></span><span class="ln out" data-wait="250">PowerShell 7.5.2</span><span class="ln cmd" data-t="whoami"><span class="ps">PS&gt;</span> whoami</span><span class="ln out" data-wait="200">azuread\samuelgabor</span><span class="ln cmd" data-t="Connect-MgGraph"><span class="ps">PS&gt;</span> Connect-MgGraph</span><span class="ln out" data-wait="1100">Welcome to Microsoft Graph!</span><span class="ln cmd" data-t="Get-MgDeviceManagementManagedDevice |"><span class="ps">PS&gt;</span> Get-MgDeviceManagementManagedDevice |</span><span class="ln cmd cont" data-t="ft DeviceName, ComplianceState"><span class="ps">&gt;&gt;</span> ft DeviceName, ComplianceState</span><span class="ln out gap" data-wait="800"></span><span class="ln out th">DeviceName   ComplianceState</span><span class="ln out th">----------   ---------------</span><span class="ln out">WIN11-LAB-01 <span class="ok">compliant</span></span><span class="ln out">Galaxy-A55   <span class="ok">compliant</span></span><span class="ln out">iPhone-SG-01 <span class="ok">compliant</span></span><span class="ln out">Galaxy-A14   <span class="ok">compliant</span></span><span class="ln out gap"></span><span class="ln cmd idle" data-wait="250"><span class="ps">PS&gt;</span> <span class="caret"></span></span></pre>
               <figcaption id="con-cap" class="sr-only">A PowerShell session: pwsh --version returns PowerShell 7.5.2, whoami returns azuread\samuelgabor, Connect-MgGraph signs in to Microsoft Graph, and Get-MgDeviceManagementManagedDevice lists four Intune devices, all compliant.</figcaption>
             </figure>
           </div>
@@ -87,10 +87,10 @@
 
     <div class="wrap">
       <dl class="spec" data-reveal>
-        <div><dt class="label">Focus</dt><dd>Microsoft Intune, Microsoft 365</dd></div>
-        <div><dt class="label">Platforms</dt><dd>Windows 11, Android Enterprise</dd></div>
-        <div><dt class="label">Baselines</dt><dd>CIS benchmarks, Level 1</dd></div>
-        <div><dt class="label">Education</dt><dd>Ing., Security Technologies, UTB Zlín</dd></div>
+        <div><dt class="label">Focus</dt><dd>Microsoft Intune, Entra ID, Microsoft 365</dd></div>
+        <div><dt class="label">Platforms</dt><dd>Windows 11, iOS, Android</dd></div>
+        <div><dt class="label">Baselines</dt><dd>CIS Windows 11 v3.0.1, CIS Apple iOS, CIS Android v1.5.0, Microsoft Security Baselines</dd></div>
+        <div><dt class="label">Education</dt><dd>Master's, Security Technologies, UTB Zlín</dd></div>
       </dl>
     </div>
 
@@ -98,53 +98,116 @@
     <section class="section wrap" id="work" aria-labelledby="work-title">
       <div class="sec-head" data-reveal>
         <p class="label">01 · Endpoint management</p>
-        <h2 id="work-title">Intune configuration you can import and reuse.</h2>
-        <p>Two complete builds: a hardened, fully managed Android fleet and a Windows 11 baseline mapped control by control to the CIS benchmark.</p>
+        <h2 id="work-title">Intune, end to end. Windows, iOS and Android.</h2>
+        <p>11 projects, each building on the last: enrolment, apps, updates, hardening and compliance. Every card opens the full write-up on GitHub.</p>
       </div>
 
-      <div class="cards">
-        <article class="card" data-reveal>
-          <div class="card-media">
-            <img src="assets/img/mdm-enrollment.webp" width="1600" height="704" loading="lazy" decoding="async" alt="Screens from a Samsung phone during Intune enrolment">
-          </div>
-          <div class="card-body">
-            <div class="card-top">
-              <h3><a href="https://github.com/BigSeeGee/Intune-Android-MDM-Deployment" target="_blank" rel="noopener">Android MDM with Intune<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h3>
-              <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span>
-            </div>
-            <p>Company-owned phones enrolled by QR code, locked down to the CIS Android benchmark, and cut off from Microsoft 365 the moment they fall out of compliance.</p>
-            <dl class="kv">
-              <div><dt>Model</dt><dd>Android Enterprise, fully managed</dd></div>
-              <div><dt>Baseline</dt><dd>CIS Google Android v1.5.0, Level 1</dd></div>
-              <div><dt>Tested on</dt><dd>Galaxy A55, A54, A14</dd></div>
-            </dl>
-            <ul class="tags" aria-label="Tools">
-              <li>Intune</li><li>Managed Google Play</li><li>Conditional Access</li><li>Defender for Endpoint</li>
-            </ul>
-          </div>
-        </article>
+      <article class="note-card" data-reveal>
+        <div>
+          <p class="label eyebrow"><span class="dot warn" aria-hidden="true"></span>Field note · from production</p>
+          <h3><a href="https://github.com/BigSeeGee/Why-Windows-LAPS-Only-Showed-the-Default-Admin-on-Some-of-Our-New-Devices" target="_blank" rel="noopener">Why Windows LAPS only showed the default admin on some new devices<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h3>
+          <p>Intune reported the LAPS policy as succeeded, yet a few brand-new devices never created the managed account. An Autopatch report gave it away: they had shipped on Windows 11 21H2, and automatic account management needs 24H2 or later.</p>
+          <ul class="tags" aria-label="Tools"><li>Windows LAPS</li><li>Entra ID</li><li>Autopatch</li></ul>
+        </div>
+        <div class="table-wrap diff">
+          <table>
+            <caption>What each build did with the same LAPS policy</caption>
+            <thead><tr><th scope="col"></th><th scope="col">21H2</th><th scope="col">25H2</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Backup to Entra ID</th><td class="yes">✓ yes</td><td class="yes">✓ yes</td></tr>
+              <tr><th scope="row">Automatic account</th><td class="no">✗ ignored</td><td class="yes">✓ created</td></tr>
+              <tr><th scope="row">Account in Entra</th><td class="no">Administrator</td><td class="yes">Custom account</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
 
-        <article class="card" data-reveal style="--d:1">
-          <div class="card-media diagram" aria-hidden="true">
-            <div class="node" style="--k:0"><b>CIS benchmark</b><span>v3.0.1 · L1</span></div>
-            <div class="link" style="--k:1"></div>
-            <div class="node" style="--k:2"><b>Control → setting map</b><span>per control</span></div>
-            <div class="link" style="--k:3"></div>
-            <div class="node" style="--k:4"><b>Intune profiles</b><span>exported</span></div>
-            <div class="link" style="--k:5"></div>
-            <div class="node end" style="--k:6"><b>Windows 11 fleet</b><span>✓ hardened</span></div>
-          </div>
-          <div class="card-body">
-            <div class="card-top">
-              <h3><a href="https://github.com/BigSeeGee/CIS-Benchmark-for-Widnows-11" target="_blank" rel="noopener">CIS baseline for Windows 11<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h3>
-              <span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span>
-            </div>
-            <p>Configuration profiles matching the CIS Windows 11 Level 1 benchmark, exported so another tenant can import them in one step.</p>
-            <ul class="tags" aria-label="Tools">
-              <li>Intune</li><li>CIS v3.0.1</li><li>IntuneManagement</li>
-            </ul>
-          </div>
-        </article>
+      <div class="track" aria-labelledby="track-windows11">
+        <div class="track-head" data-reveal>
+          <p class="label">6 projects</p>
+          <h3 id="track-windows11">Windows 11</h3>
+          <p>Built in order on one lab tenant: provision the device, deliver apps, keep it patched, then lock it down.</p>
+        </div>
+        <ol class="pgrid">
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">W-01</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Microsoft-Entra-Joined-Cloud-Only-Windows-11-Autopilot" target="_blank" rel="noopener">Entra joined, cloud-only Autopilot<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Zero-touch Windows 11 provisioning with no on-premises AD, a Group Tag driven dynamic group and an Enrollment Status Page that holds the desktop until setup finishes.</p>
+            <ul class="tags" aria-label="Tools"><li>Autopilot</li><li>Entra ID</li><li>ESP</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:1">
+            <div class="pcard-top"><span class="label">W-02</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Intune-Application-Deployment---Store-Win32-App-Catalog-Custom-Win32" target="_blank" rel="noopener">Application deployment<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>The three ways to ship software through Intune: a Store app, the Enterprise App Catalog, and a custom Win32 package with its own detection and requirement rules.</p>
+            <ul class="tags" aria-label="Tools"><li>Win32 apps</li><li>App Catalog</li><li>Company Portal</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">W-03</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Windows-Autopilot-Device-Preparation-New-Experience" target="_blank" rel="noopener">Autopilot device preparation<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Microsoft's newer provisioning flow with no hardware hash to import, set up and compared directly against traditional Autopilot.</p>
+            <ul class="tags" aria-label="Tools"><li>Device preparation</li><li>Entra ID</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:1">
+            <div class="pcard-top"><span class="label">W-04</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Windows-Autopatch---Automated-Update-Management" target="_blank" rel="noopener">Windows Autopatch<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Quality, feature, Microsoft 365 Apps and driver updates rolled out through Test, First, Fast and Broad rings, with no hand-built update policies.</p>
+            <ul class="tags" aria-label="Tools"><li>Autopatch</li><li>Update rings</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">W-05</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Compliance-Security-Baselines-BitLocker-CIS-Benchmark-Mapping" target="_blank" rel="noopener">Compliance, baselines and BitLocker<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>A security baseline, XTS-AES 256 BitLocker with recovery keys in Entra ID, a Settings Catalog profile and a compliance policy, each setting mapped to a CIS control.</p>
+            <ul class="tags" aria-label="Tools"><li>BitLocker</li><li>Security baseline</li><li>CIS</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:1">
+            <div class="pcard-top"><span class="label">W-06</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/CIS-Benchmark-for-Widnows-11" target="_blank" rel="noopener">CIS baseline for Windows 11<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Configuration profiles matching the CIS Windows 11 v3.0.1 Level 1 benchmark, exported so another tenant can import them in one step.</p>
+            <ul class="tags" aria-label="Tools"><li>CIS v3.0.1</li><li>IntuneManagement</li></ul>
+          </li>
+        </ol>
+      </div>
+      <div class="track" aria-labelledby="track-ios">
+        <div class="track-head" data-reveal>
+          <p class="label">3 projects</p>
+          <h3 id="track-ios">iOS</h3>
+          <p>From Apple Business Manager to a hardened, compliant iPhone, with a separate path for personal devices.</p>
+        </div>
+        <ol class="pgrid">
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">I-01</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Apple-Business-Manager-Setup-Device-Assignment" target="_blank" rel="noopener">Apple Business Manager setup<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Apple Business Manager linked to Intune with an MDM server token, and an enrolment profile for supervised, zero-touch corporate iPhones.</p>
+            <ul class="tags" aria-label="Tools"><li>ABM</li><li>ADE</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:1">
+            <div class="pcard-top"><span class="label">I-02</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Comparing-iOS-Enrollment-Methods" target="_blank" rel="noopener">Comparing iOS enrolment methods<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Automated Device Enrollment, Apple Configurator, Company Portal and Account-Driven User Enrollment, each enrolled and compared by ownership and control.</p>
+            <ul class="tags" aria-label="Tools"><li>ADE</li><li>Apple Configurator</li><li>BYOD</li></ul>
+          </li>
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">I-03</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/iOS-CIS-Hardening-Compliance-App-Protection" target="_blank" rel="noopener">iOS hardening and App Protection<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Restrictions mapped to the CIS Apple iOS benchmark, a compliance policy feeding Conditional Access, and App Protection for BYOD.</p>
+            <ul class="tags" aria-label="Tools"><li>CIS iOS</li><li>App Protection</li><li>Compliance</li></ul>
+          </li>
+        </ol>
+      </div>
+      <div class="track" aria-labelledby="track-android">
+        <div class="track-head" data-reveal>
+          <p class="label">1 project</p>
+          <h3 id="track-android">Android</h3>
+          <p>Company-owned phones, fully managed from the first boot.</p>
+        </div>
+        <ol class="pgrid">
+          <li class="pcard" data-reveal style="--d:0">
+            <div class="pcard-top"><span class="label">A-01</span><span class="go" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11 11 5M6 5h5v5"/></svg></span></div>
+            <h4><a href="https://github.com/BigSeeGee/Intune-Android-MDM-Deployment" target="_blank" rel="noopener">Android Enterprise MDM<span class="sr-only"> (GitHub, opens in a new tab)</span></a></h4>
+            <p>Samsung phones enrolled by QR code, hardened to CIS Android v1.5.0, set up with work apps and blocked from Microsoft 365 when they fall out of compliance.</p>
+            <ul class="tags" aria-label="Tools"><li>Android Enterprise</li><li>Managed Google Play</li><li>Conditional Access</li></ul>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -159,26 +222,26 @@
         <div class="cap" data-reveal>
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="13" height="9.5" rx="1.5"/><path d="M1.5 17.5h15"/><rect x="17.5" y="8.5" width="5" height="11" rx="1.2"/></svg>
           <h3>Device management</h3>
-          <p>Enrolment, apps and user experience on managed devices.</p>
-          <ul><li>Microsoft Intune</li><li>Android Enterprise</li><li>Managed Google Play</li><li>App configuration policies</li><li>Microsoft Launcher</li></ul>
+          <p>Getting devices enrolled and ready without touching them.</p>
+          <ul><li>Windows Autopilot</li><li>Autopilot device preparation</li><li>Apple Business Manager, ADE</li><li>Android Enterprise</li><li>Store, catalog and Win32 apps</li></ul>
         </div>
         <div class="cap" data-reveal style="--d:1">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5 20 5.5v6c0 4.6-3.4 8.5-8 9.5-4.6-1-8-4.9-8-9.5v-6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
           <h3>Hardening</h3>
           <p>Baselines that turn a benchmark into enforced settings.</p>
-          <ul><li>CIS Windows 11 v3.0.1</li><li>CIS Android v1.5.0</li><li>Compliance policies</li><li>Storage encryption</li><li>Play Integrity</li></ul>
+          <ul><li>CIS Windows 11, iOS, Android</li><li>Security baselines</li><li>BitLocker</li><li>Windows LAPS</li><li>Compliance policies</li></ul>
         </div>
         <div class="cap" data-reveal style="--d:2">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20.5c.6-3.4 3-5.8 6-5.8"/><rect x="13" y="14" width="8" height="6.5" rx="1.2"/><path d="M15 14v-1.5a2 2 0 0 1 4 0V14"/></svg>
           <h3>Identity and access</h3>
           <p>Only healthy devices reach company data.</p>
-          <ul><li>Microsoft Entra ID</li><li>Conditional Access</li><li>Defender for Endpoint risk</li><li>Microsoft 365</li></ul>
+          <ul><li>Microsoft Entra ID</li><li>Dynamic groups</li><li>Conditional Access</li><li>App Protection (MAM)</li><li>Defender for Endpoint risk</li></ul>
         </div>
         <div class="cap" data-reveal style="--d:3">
           <svg class="cap-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01M11 7.5h6M11 16.5h6"/></svg>
-          <h3>Infrastructure</h3>
-          <p>A home lab to test on before anything reaches production.</p>
-          <ul><li>Unraid</li><li>Docker</li><li>UniFi Network</li><li>Home Assistant</li></ul>
+          <h3>Updates and operations</h3>
+          <p>Keeping a fleet current and finding out when it isn't.</p>
+          <ul><li>Windows Autopatch</li><li>Deployment rings</li><li>Autopatch reports</li><li>PowerShell, Microsoft Graph</li><li>Unraid, Docker lab</li></ul>
         </div>
       </div>
     </section>
