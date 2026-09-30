@@ -327,16 +327,13 @@ button { font: inherit; }
 }
 
 /* ---------- Sections ---------- */
-.section { padding-block: clamp(4rem, 10vw, 8rem) 0; }
-.sec-head { display: grid; gap: 1.25rem 3rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.section { padding-block: clamp(3.5rem, 8vw, 6rem) 0; }
+/* Label, heading and intro stacked in one left-aligned column */
+.sec-head { display: grid; gap: 1rem; max-width: 48rem; margin-bottom: clamp(2rem, 4vw, 3rem); }
 .sec-head .label { display: flex; align-items: center; gap: 0.75rem; }
 .sec-head .label::after { content: ""; height: 1px; flex: 1; background: var(--rule); max-width: 6rem; }
 .sec-head h2 { font-size: var(--step-3); letter-spacing: -0.035em; line-height: 1.02; }
-.sec-head p { color: var(--ink-2); max-width: 34rem; font-size: var(--step-0); }
-@media (min-width: 900px) {
-  .sec-head { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: end; }
-  .sec-head .label { grid-column: 1 / -1; }
-}
+.sec-head p { color: var(--ink-2); max-width: 40rem; font-size: var(--step-0); }
 
 /* Cards */
 .cards { display: grid; gap: 1.25rem; }
@@ -551,10 +548,10 @@ button { font: inherit; }
 
 /* Contact */
 .contact {
-  margin-top: clamp(4rem, 10vw, 8rem); padding-block: clamp(3rem, 8vw, 5rem);
-  border-top: 1px solid var(--ink); display: grid; gap: 2rem;
+  margin-top: clamp(3.5rem, 8vw, 6rem); padding-block: clamp(2.5rem, 6vw, 4rem);
+  border-top: 1px solid var(--ink); display: grid; gap: 1.75rem;
 }
-.contact h2 { font-size: var(--step-3); letter-spacing: -0.035em; line-height: 1.02; max-width: 16ch; }
+.contact h2 { font-size: var(--step-3); letter-spacing: -0.035em; line-height: 1.02; max-width: 22ch; }
 .contact-links { list-style: none; display: grid; border-top: 1px solid var(--rule); }
 .contact-links a {
   display: flex; justify-content: space-between; align-items: center; gap: 1rem;
@@ -565,13 +562,14 @@ button { font: inherit; }
 .contact-links svg { width: 18px; height: 18px; transition: transform var(--dur-2) var(--ease-out); }
 .contact-links a:hover svg { transform: translate(3px, -3px); }
 .contact-links a:hover { color: var(--accent); }
-@media (min-width: 900px) { .contact { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 5rem; align-items: end; } }
 
+/* The rule is drawn inside the gutters so it matches the width of the lines above */
 .site-foot {
-  border-top: 1px solid var(--rule); padding-block: 1.25rem 2rem;
+  position: relative; padding-block: 1.25rem 2rem;
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem 1.5rem;
   color: var(--ink-3); font-family: var(--mono); font-size: var(--step--2); letter-spacing: 0.03em;
 }
+.site-foot::before { content: ""; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); height: 1px; background: var(--rule); }
 .site-foot a { color: var(--ink-3); text-decoration: none; display: inline-block; padding-block: 0.7rem; }
 .site-foot a:hover { color: var(--ink); }
 
