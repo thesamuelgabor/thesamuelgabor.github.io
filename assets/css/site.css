@@ -317,15 +317,13 @@ button { font: inherit; }
 }
 .spec > div { padding: 1.1rem 1rem 1.2rem 0; display: grid; gap: 0.35rem; align-content: start; }
 .spec > div + div { padding-left: 1rem; border-left: 1px solid var(--rule); }
-.spec > div:nth-child(3) { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); }
-.spec > div:nth-child(4) { border-top: 1px solid var(--rule); }
+.spec > div:nth-child(3) { grid-column: 1 / -1; border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); }
 .spec dd { margin: 0; font-size: var(--step--1); font-weight: 500; line-height: 1.45; }
 .spec dt { margin: 0; }
 @media (min-width: 860px) {
-  .spec { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .spec { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .spec > div { padding-block: 1.4rem 1.5rem; }
-  .spec > div:nth-child(3), .spec > div:nth-child(4) { border-top: 0; }
-  .spec > div:nth-child(3) { border-left: 1px solid var(--rule); padding-left: 1rem; }
+  .spec > div:nth-child(3) { grid-column: auto; border-top: 0; border-left: 1px solid var(--rule); padding-left: 1rem; }
 }
 
 /* ---------- Sections ---------- */
