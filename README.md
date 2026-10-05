@@ -1,2 +1,2 @@
-# samuelgabor.com
-# samuelgabor.sk
+samuelgabor.com
+samuelgabor.sk
